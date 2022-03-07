@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Pastelería</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script>
+        function myAlert() {
+            alert("Su pedido ha sido registrado.");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <h1>MI PASTELERÍA</h1>
+                    <!--<a href="#"><i class="fa fa-birthday-cake" aria-hidden="true"></i></a>-->
+                </div>
+                    <nav class="nav">
+                        <a href="index.html">Productos</a>
+                        <a href="pedidos.html">Pedido Especial</a>
+                        <a href="detalle.html">Detalle Pedido</a>
+                    </nav>
+                    <div class="social">
+                        <div>
+                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                        </div>
+                        
+                    </div>
+            </div>
+            <div class="texto-principal margen-interno">
+                <h1>Llegamos a las familias mexicanas con productos exquisitos de alta calidad,
+                    creando experiencias únicas y deleitando los sentidos de nuestros consumidores. </h1>
+            </div>
+        </header>
+
+        <section class="section margen-interno">
+            <div class="articulos">
+                <article class="article">
+                    <h3>Elegir Tipo de Pan</h3>
+                    <input type="radio" id="chocolate" name="tipopan">
+                    <label for="vainilla">Chocolate</label><br>
+                    <input type="radio" id="vainilla" name="tipopan">
+                    <label for="vainilla">Vainilla</label><br>
+                    <input type="radio" id="imposible" name="tipopan">
+                    <label for="imposible">Imposible</label><br>
+                </article>
+                <article class="article">
+                    <h3>Elegir Relleno</h3>
+                    <input type="radio" id="nuez" name="relleno">
+                    <label for="nuez">Nuez</label><br>
+                    <input type="radio" id="envinado" name="relleno">
+                    <label for="envinado">Envinado</label><br>
+                    <input type="radio" id="leches" name="relleno">
+                    <label for="leches">Tres Leches</label><br>
+                </article>
+                <article class="article">
+                    <h3>Elegir Decoración</h3>
+                    <input type="radio" id="duraznos" name="decoracion">
+                    <label for="duraznos">Duraznos</label><br>
+                    <input type="radio" id="fresas" name="decoracion">
+                    <label for="fresas">Fresas</label><br>
+                    <input type="radio" id="combinado" name="decoracion">
+                    <label for="combinado">Duraznos con Fresas</label><br>
+                </article>
+                <article class="article">
+                    <h3>Datos Personales</h3>
+                    <label for="nombre1">Nombre</label>
+                    <input type="text" id="nombre1" name="nombre1"><br>
+                    <label for="telefono1">Teléfono</label>
+                    <input type="tel" id="telefono1" name="telefono1"><br>
+                    <label for="correo1">Correo</label>
+                    <input type="email" id="correo1" name="correo1">
+                </article>
+                <article class="article">
+                    <h3>Domicilio Particular</h3>
+                    <label for="calle1">Calle</label>
+                    <input type="text" id="calle1" name="calle1"><br>
+                    <label for="numero1">Número</label>
+                    <input type="numero" id="numero1" name="numero1"><br>
+                    <label for="colonia1">Colonia</label>
+                    <input type="text" id="colonia1" name="colonia1">
+                </article>
+                <article class="article">
+                    <h3>Fecha</h3>
+                    <label for="actual1">Fecha Actual</label>
+                    <input type="datetime" name="actual1" value="26/02/2022"><br>
+                    <label for="entrega1">Fecha Entrega</label>
+                    <input type="date" id="entrega1" name="entrega1">
+                </article>
+                <article class="article">
+                    <h3>Pago con Tarjeta</h3>
+                    <label for="tarjeta1">Número de Tarjeta</label>
+                    <input type="text" id="tarjeta1" name="tarjeta1"><br>
+                    <label for="vento1">Fecha vencimiento</label>
+                    <input type="text" id="vento1" name="vento1"><br>
+                    <label for="cvv1">CVV</label>
+                    <input type="password" id="cvv1" name="cvv1"><br>    
+                </article>
+                <article class="article">
+                    <button onclick="myAlert()">REGISTRAR PEDIDO</button>
+                </article>
+                <nav class="navegacion">
+                    <a href="index.html">REGRESAR</a>
+                </nav>
+            </div>
+            <aside class="aside">
+                <div class="publicidad">
+                    <h4>ARTICULO SELECCIONADO</h4>
+                    <img src="images/imposible.jpg" alt="">
+                </div>
+            </aside>
+        </section>
+        <footer class="footer margen-interno">
+            <nav class="pie">
+                <a href="#">Avenida los Viñedos S/N</a>
+                <br>
+                <a href="#">55662799</a>
+                <br>
+                <a href="#">Servicio de Martes a Damingo de 12 a 22 horas</a>
+                <br>
+                <a href="#">Copyright 2022</a>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+</html>
